@@ -198,6 +198,339 @@ GitHub Desktop is a GUI client that simplifies the interaction with Git and GitH
 % Create the title page
 \maketitle
 
+\newpage
+\title{\centering \Large \textbf{3. Calculator in C} \\ \vspace{0.5cm}} % Increase size and add space below
+\title{Lab Entry By\\[0.5cm] \large Susmita Das\\[0.5cm]
+
+\begin{document}
+
+\maketitle
+
+\section{\raggedright \underline{Introduction}}
+\small \raggedright In this document, I will present a detailed explanation of a simple calculator program developed in the C programming language. This calculator performs various arithmetic operations including addition, subtraction, multiplication, division, percentage calculation, squaring, and cubing of numbers. The design of this calculator is aimed at providing a user-friendly interface with robust input validation to ensure accurate results.
+
+\section{\raggedright \underline{Code}}
+\raggedright Below is the complete code for the calculator in C, followed by an explanation of each function and its role in the program.
+
+
+% Define the light gray color for background
+\definecolor{lightgray}{rgb}{0.9,0.9,0.9}
+
+
+\begin{lstlisting}[caption=Simple Calculator in C]
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+// Function declarations
+void addition();
+void subtract();
+void multiply();
+void divide();
+void percentage();
+void square();
+void cube();
+
+int main() {
+    int op;
+
+    do {
+        printf("Select an operation to perform in the C Calculator:\n");
+        printf("1. Addition\n");
+        printf("2. Subtraction\n");
+        printf("3. Multiplication\n");
+        printf("4. Division\n");
+        printf("5. Percentage\n");
+        printf("6. Square\n");
+        printf("7. Cube\n");
+        printf("8. Exit\n");
+        printf("Please make a choice: ");
+
+        // Validate user input
+        while (scanf("%d", &op) != 1) {
+            printf("Invalid input! Please enter a number between 1 and 8: ");
+            while (getchar() != '\n'); // Clear the invalid input
+        }
+
+        // Perform the selected operation
+        switch (op) {
+            case 1:
+                addition(); // Call the addition function
+                break;
+            case 2:
+                subtract(); // Call the subtraction function
+                break;
+            case 3:
+                multiply(); // Call the multiplication function
+                break;
+            case 4:
+                divide(); // Call the division function
+                break;
+            case 5:
+                percentage(); // Call the percentage function
+                break;
+            case 6:
+                square(); // Call the square function
+                break;
+            case 7:
+                cube(); // Call the cube function
+                break;
+            case 8:
+                printf("Exiting the program.\n");
+                exit(0); // Exit the program
+            default:
+                printf("Error! Invalid choice. Try again.\n");
+        }
+        printf("\n*\n");
+    } while (op != 8); // Repeat until the user chooses to exit
+
+    return 0;
+}
+
+// Function definitions
+
+// Function to add numbers
+void addition() {
+    int i, num;
+    double sum = 0;
+    printf("How many numbers do you want to add? ");
+    
+    // Read the number of inputs and validate it
+    while (scanf("%d", &num) != 1 || num <= 0) {
+        printf("Invalid input! Enter a positive number: ");
+        while (getchar() != '\n'); // Clear the invalid input
+    }
+
+    printf("Enter the numbers:\n");
+    for (i = 1; i <= num; i++) {
+        double f_num;
+        while (scanf("%lf", &f_num) != 1) {
+            printf("Invalid input! Enter a valid number: ");
+            while (getchar() != '\n'); // Clear the invalid input
+        }
+        sum += f_num;
+    }
+
+    // Display the result
+    printf("Total sum of the numbers = %.2lf\n", sum);
+}
+
+// Function to subtract two numbers
+void subtract() {
+    double n1, n2;
+    printf("Enter the first number: ");
+    scanf("%lf", &n1);
+    printf("Enter the second number: ");
+    scanf("%lf", &n2);
+    printf("The result of %.2lf - %.2lf is: %.2lf\n", n1, n2, n1 - n2);
+}
+
+// Function to multiply two numbers
+void multiply() {
+    double n1, n2;
+    printf("Enter the first number: ");
+    scanf("%lf", &n1);
+    printf("Enter the second number: ");
+    scanf("%lf", &n2);
+    printf("The result of %.2lf * %.2lf is: %.2lf\n", n1, n2, n1 * n2);
+}
+
+// Function to divide two numbers
+void divide() {
+    double n1, n2;
+    printf("Enter the first number: ");
+    scanf("%lf", &n1);
+    printf("Enter the second number: ");
+    scanf("%lf", &n2);
+
+    if (n2 != 0) {
+        printf("The result of %.2lf / %.2lf is: %.2lf\n", n1, n2, n1 / n2);
+    } else {
+        printf("Error! Division by zero is not allowed.\n");
+    }
+}
+
+// Function to calculate the percentage
+void percentage() {
+    double value, percent;
+    printf("Enter the value: ");
+    scanf("%lf", &value);
+    printf("Enter the percentage: ");
+    scanf("%lf", &percent);
+    printf("%.2lf percent of %.2lf is: %.2lf\n", percent, value, (percent / 100) * value);
+}
+
+// Function to calculate the square of a number
+void square() {
+    double n1;
+    printf("Enter a number to get the square: ");
+    scanf("%lf", &n1);
+    printf("The square of %.2lf is: %.2lf\n", n1, n1 * n1);
+}
+
+// Function to calculate the cube of a number
+void cube() {
+    double n1;
+    printf("Enter a number to get the cube: ");
+    scanf("%lf", &n1);
+    printf("The cube of %.2lf is: %.2lf\n", n1, n1 * n1 * n1);
+}
+\end{lstlisting}
+
+\section{\underline{Function Explanations With Output Values}}
+
+\subsection{Addition Function}
+\small The \texttt{addition()} function allows the user to input multiple numbers and calculates their sum. It prompts the user for the number of inputs, validates the input, and then reads the numbers, summing them up. 
+
+\textbf{\\Example Output:}
+\begin{verbatim}
+Select an operation to perform in the C Calculator:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Percentage
+6. Square
+7. Cube
+8. Exit
+Please make a choice: 1
+How many numbers do you want to add? 3
+Enter the numbers:
+5
+10
+15
+Total sum of the numbers = 30.00
+\end{verbatim}
+
+\subsection{Subtraction Function}
+\small The \texttt{subtract()} function performs subtraction between two user-provided numbers. It prompts the user for two numbers and then calculates and displays their difference.
+
+\textbf{\\Example Output:}
+\begin{verbatim}
+Select an operation to perform in the C Calculator:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Percentage
+6. Square
+7. Cube
+8. Exit
+Please make a choice: 2
+Enter the first number: 20
+Enter the second number: 5
+The result of 20.00 - 5.00 is: 15.00
+\end{verbatim}
+
+\subsection{Multiplication Function}
+\small The \texttt{multiply()} function performs multiplication of two numbers entered by the user. It displays the product of the two numbers.
+
+\textbf{\\Example Output:}
+\begin{verbatim}
+Select an operation to perform in the C Calculator:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Percentage
+6. Square
+7. Cube
+8. Exit
+Please make a choice: 3
+Enter the first number: 4
+Enter the second number: 5
+The result of 4.00 * 5.00 is: 20.00
+\end{verbatim}
+
+\subsection{Division Function}
+\small The \texttt{divide()} function handles the division of two numbers. It includes a check to prevent division by zero, ensuring the user does not encounter an error.
+
+\textbf{\\Example Output:}
+\begin{verbatim}
+Select an operation to perform in the C Calculator:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Percentage
+6. Square
+7. Cube
+8. Exit
+Please make a choice: 4
+Enter the first number: 25
+Enter the second number: 5
+The result of 25.00 / 5.00 is: 5.00
+\end{verbatim}
+
+\subsection{Percentage Function}
+\small The \texttt{percentage()} function calculates the percentage of a given value. The user inputs a value and the percentage, and the function computes and displays the result.
+
+\textbf{\\Example Output:}
+\begin{verbatim}
+Select an operation to perform in the C Calculator:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Percentage
+6. Square
+7. Cube
+8. Exit
+Please make a choice: 5
+Enter the value: 200
+Enter the percentage: 15
+15.00 percent of 200.00 is: 30.00
+\end{verbatim}
+
+\subsection{{Square Function}}
+\small The \texttt{square()} function calculates the square of a number. The user inputs a number, and the function computes and displays its square.
+
+\textbf{\\Example Output:}
+\begin{verbatim}
+Select an operation to perform in the C Calculator:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Percentage
+6. Square
+7. Cube
+8. Exit
+Please make a choice: 6
+Enter a number to get the square: 7
+The square of 7.00 is: 49.00
+\end{verbatim}
+
+\subsection{Cube Function}
+\small The \texttt{cube()} function calculates the cube of a number. The user inputs a number, and the function computes and displays its cube.
+
+\textbf{\\Example Output:}
+\begin{verbatim}
+Select an operation to perform in the C Calculator:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Percentage
+6. Square
+7. Cube
+8. Exit
+Please make a choice: 7
+Enter a number to get the cube: 3
+The cube of 3.00 is: 27.00
+\end{verbatim}
+
+
+\section{\underline{Conclusion}}
+
+\small % Decreases the font size
+In conclusion, the simple calculator program developed in C provides a comprehensive tool for performing basic arithmetic operations. This calculator covers a range of functions including addition, subtraction, multiplication, division, percentage calculation, and the computation of squares and cubes of numbers. Each function is designed with user-friendly prompts and robust input validation to ensure accuracy and ease of use. \\
+
+The program demonstrates effective use of functions to modulate the code, making it both organized and easy to maintain. By implementing input validation and error handling, the calculator minimizes the risk of user errors and enhances the overall user experience.\\
+
+This project not only highlights fundamental programming concepts such as function definition and control structures but also showcases practical application in developing tools for everyday use. This simple calculator serves as a solid foundation for building more complex applications and improving programming skills in C.\\
+
+Overall, this calculator is a valuable exercise in programming, offering insights into both basic and intermediate concepts, and providing a useful utility for performing arithmetic operations efficiently.\\
 
 \newpage
 \title{\centering \LARGE \textbf{4. Introduction to Latex} \\[0.5cm]}
@@ -617,11 +950,6 @@ This document has provided an introduction to the fundamental features of \LaTeX
 Additionally, \LaTeX{} accommodates internationalization and localization through packages such as polyglossia or babel, and allows document output in various formats like PDF, HTML, and EPUB.
 
 In summary, while this document provides a basic overview, \LaTeX{}'s true strength lies in its advanced features and flexibility, enabling the creation of professional-quality documents with precision. As you delve deeper into \LaTeX{}, you'll uncover more tools and techniques that can enhance your document preparation process.
-
-
-
-
-
 
 \newpage
 \title{\centering \Large \textbf{4. Creating LaTeX Repository on GitHub} \\[0.5cm]}
