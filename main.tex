@@ -1,0 +1,1069 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{geometry}
+\geometry{left=1in, right=1in, top=1in, bottom=1in}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\lstset{
+  language=C,                              % Set language to C
+  backgroundcolor=\color{lightgray},       % Set the background color
+  frame=single,                            % Add a single frame around the listing
+  xleftmargin=1.5em,                       % Left margin to ensure code stays inside
+  xrightmargin=1.5em,                      % Right margin for same reason
+  numbers=left,                            % Line numbers on the left
+  numberstyle=\tiny\color{black},          % Line number style
+  stepnumber=1,                            % Show line numbers for every line
+  numbersep=10pt,                          % Distance between numbers and code
+  tabsize=2,                               % Tab size (2 spaces for indentation)
+  showstringspaces=false,                  % Do not display spaces in strings
+  breaklines=true,                         % Break long lines of code
+  breakatwhitespace=false,                 % Allow breaking at arbitrary whitespace
+  keywordstyle=\color{blue},               % Keywords in blue
+  commentstyle=\color{green!50!black},     % Comments in dark green
+  stringstyle=\color{red},                 % Strings in red
+  basicstyle=\ttfamily\footnotesize,       % Code font and size
+  framerule=2pt,                           % Thickness of the frame
+}
+\title{\Huge \textbf{Software Tools And Technology}} 
+\date{}
+\author{Group 32}
+
+\begin{document}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.3\linewidth]{makaut logo.png}
+\end{figure}
+
+\maketitle
+\pagenumbering{gobble}:
+
+\begin{tikzpicture}
+[remember picture, overlay] \draw[line width = 2pt] ($(current page.north west) + (0.5in, -0.5in)$) rectangle ($(current page.south east) + (-0.5in, 0.5in)$);
+\end{tikzpicture}
+
+\begin{center}
+
+\LARGE\textbf{Lab Notebook}
+
+\end{center}
+
+\centering
+\vspace{0.5cm}
+
+\bfseries{\underline{Group members:}}
+
+\begin{enumerate}
+       \item Koushik Patra, BCA (Leader)
+    \item Saniya Kayal, BCA
+    \item Susmita Das, Bsc IT (AI)
+    \item Aishi Barik, Bsc Forensic Science
+    \item Sayan Biswas Bsc IT (AI)
+\end{enumerate}
+
+\vspace{2cm}
+ \textbf{Instructor:} Dr.Ayan Ghosh \\
+ \textbf{Course:} Software Tools And Technology
+
+\newpage
+
+\usetikzlibrary{calc}
+
+\begin{tikzpicture}
+[remember picture, overlay] \draw[line width = 2pt] ($(current page.north west) + (0.5in, -0.5in)$) rectangle ($(current page.south east) + (-0.5in, 0.5in)$);
+\end{tikzpicture}
+
+\centering
+
+\begin{center}
+\Large{\bfseries\underline{Lab Notebook Entries}}
+\end{center}
+
+\vspace{1.5cm}
+\section{Lab Entry by Koushik Patra}
+
+\vspace{0.7cm}
+\subsection{Experiment}
+
+\vspace{0.5cm}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|p{50pt}|p{200pt}|}
+\hline
+\textbf{Sl. No.} & \textbf{Assignments} \\ \hline
+1. & Introduction to Github and Github desktop version installation \\ \hline
+\end{tabular}
+\end{table}
+
+%\vspace{1.2cm}
+\section{Lab Entry by Saniya Kayal}
+\subsection{Experiment}
+
+\vspace{0.5cm}
+\begin{table}[ht]
+\centering
+\begin{tabular}{|p{50pt}|p{200pt}|}
+\hline
+\textbf{Sl. No.} & \textbf{Assignments} \\ \hline
+1. & Converting Submit button to Chin Tapak Dum Dum \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Lab Entry by Susmita Das}
+\subsection{Experiment}
+
+\vspace{0.5cm}
+\begin{table}[ht]
+\centering
+\begin{tabular}{|p{50pt}|p{200pt}|}
+\hline
+\textbf{Sl. No.} & \textbf{Assignments} \\ \hline
+1. & Making calculator in C  \\ \hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+\usetikzlibrary{calc}
+
+\begin{tikzpicture}
+[remember picture, overlay] \draw[line width = 2pt] ($(current page.north west) + (0.5in, -0.5in)$) rectangle ($(current page.south east) + (-0.5in, 0.5in)$);
+\end{tikzpicture}
+\section{Lab Entry by Aishi Barik}
+\subsection{Experiment}
+
+\vspace{0.5cm}
+\begin{table}[ht]
+\centering
+\begin{tabular}{|p{50pt}|p{200pt}|}
+\hline
+\textbf{Sl. No.} & \textbf{Assignments} \\ \hline
+1. & Creating latex repository on github \\ \hline
+\end{tabular}
+\end{table}
+
+\vspace{2.5cm}
+\section{Lab Entry by Sayan Biswas}
+\subsection{Experiment}
+
+\vspace{0.5cm}
+\begin{table}[ht]
+\centering
+\begin{tabular}{|p{50pt}|p{200pt}|}
+\hline
+\textbf{Sl. No.} & \textbf{Assignments} \\ \hline
+1. & Introduction to latex \\ \hline
+\end{tabular}
+\end{table}
+
+\newpage
+\usetikzlibrary{calc}
+
+\begin{tikzpicture}
+[remember picture, overlay] \draw[line width = 2pt] ($(current page.north west) + (0.5in, -0.5in)$) rectangle ($(current page.south east) + (-0.5in, 0.5in)$);
+\end{tikzpicture}
+\title{Lab Entry By\\[0.5cm] \large Koushik Patra\\[0.5cm]
+    \begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{WhatsApp Image 2024-09-15 at 22.55.20_cb23c58b.jpg} 
+\end{figure}
+\author{}
+\date{}
+
+\maketitle
+\section*{1. Introduction to GitHub and GitHub Desktop Version Installation}
+
+In this section, we will explore what GitHub is, its features, and how to install the GitHub Desktop version. GitHub is a platform that enables developers to collaborate, track, and manage code versions through Git version control. It provides a web-based interface for easier management of Git repositories.
+
+\subsection*{1. Introduction to GitHub}
+GitHub is a web-based platform that allows developers to host and review code, manage projects, and build software collaboratively. Git is a version control system that enables tracking of changes, and GitHub adds a graphical interface and additional features on top of Git.
+
+\subsection*{2. GitHub Desktop Installation}
+GitHub Desktop is a GUI client that simplifies the interaction with Git and GitHub. It allows users to handle repositories, create branches, and manage commits without using the command line.
+
+\subsubsection*{Steps to Install GitHub Desktop:}
+\begin{enumerate}
+    \item Visit the GitHub Desktop official website at \\\texttt{https://desktop.github.com/}.
+    \item Click on the \texttt{Download for your OS} button (Windows/Mac).
+    \item Follow the installation instructions provided by the installer.
+    \item Once installed, sign in with your GitHub credentials to start using GitHub Desktop.
+\end{enumerate}
+\newpage
+
+\begin{center}
+\title{Lab Entry By\\[0.5cm] \large Saniya Kayal\\[0.5cm]
+\fbox{\fbox{\parbox{5.5in}{\centering
+
+2. Changing the submit button to Chin Tapak Dum Dum and fixing the disproportionate}}}
+\end{center}
+
+\section{STEPS}
+Changed the submit button to"Chin tapak Dum Dum through this code.
+\begin{figure}[h!]
+    \centering
+            \includegraphics[width=0.5\linewidth]{WhatsApp Image 2024-09-15 at 22.55.21_e006d7f7.jpg}
+            \caption{JAVA CODE}
+            \label{fig:enter-label}
+        \end{figure}
+    \begin{itemize}
+        \item \textbf{Font Size and Style:} The font size and style have been adjusted for improved readability and consistency with the overall design.
+        \item \textbf{Background Color:} The background color of the button has been updated to create a more visually appealing and cohesive look.
+        \item \textbf{Font Color:} The font color has been modified to ensure strong contrast with the background, enhancing legibility.
+        \item \textbf{Element Proportions:} Any disproportionate elements have been corrected to achieve a more balanced and aesthetically pleasing design.
+    \end{itemize}
+    \newpage
+\section{OUTPUT}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{WhatsApp Image 2024-09-15 at 22.55.21_a20a16b5.jpg}
+    \caption{FINAL OUTPUT}
+    \label{fig:enter-label}
+\end{figure}
+
+
+
+\newpage
+\title{\centering \Large \textbf{3. Calculator in C} \\ \vspace{0.5cm}} % Increase size and add space below
+\title{Lab Entry By\\[0.5cm] \large Susmita Das\\[0.5cm]
+
+
+
+\begin{document}
+
+\maketitle
+
+\section{\raggedright \underline{Introduction}}
+\small \raggedright In this document, I will present a detailed explanation of a simple calculator program developed in the C programming language. This calculator performs various arithmetic operations including addition, subtraction, multiplication, division, percentage calculation, squaring, and cubing of numbers. The design of this calculator is aimed at providing a user-friendly interface with robust input validation to ensure accurate results.
+
+\section{\raggedright \underline{Code}}
+\raggedright Below is the complete code for the calculator in C, followed by an explanation of each function and its role in the program.
+
+
+% Define the light gray color for background
+\definecolor{lightgray}{rgb}{0.9,0.9,0.9}
+
+
+\begin{lstlisting}[caption=Simple Calculator in C]
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+// Function declarations
+void addition();
+void subtract();
+void multiply();
+void divide();
+void percentage();
+void square();
+void cube();
+
+int main() {
+    int op;
+
+    do {
+        printf("Select an operation to perform in the C Calculator:\n");
+        printf("1. Addition\n");
+        printf("2. Subtraction\n");
+        printf("3. Multiplication\n");
+        printf("4. Division\n");
+        printf("5. Percentage\n");
+        printf("6. Square\n");
+        printf("7. Cube\n");
+        printf("8. Exit\n");
+        printf("Please make a choice: ");
+
+        // Validate user input
+        while (scanf("%d", &op) != 1) {
+            printf("Invalid input! Please enter a number between 1 and 8: ");
+            while (getchar() != '\n'); // Clear the invalid input
+        }
+
+        // Perform the selected operation
+        switch (op) {
+            case 1:
+                addition(); // Call the addition function
+                break;
+            case 2:
+                subtract(); // Call the subtraction function
+                break;
+            case 3:
+                multiply(); // Call the multiplication function
+                break;
+            case 4:
+                divide(); // Call the division function
+                break;
+            case 5:
+                percentage(); // Call the percentage function
+                break;
+            case 6:
+                square(); // Call the square function
+                break;
+            case 7:
+                cube(); // Call the cube function
+                break;
+            case 8:
+                printf("Exiting the program.\n");
+                exit(0); // Exit the program
+            default:
+                printf("Error! Invalid choice. Try again.\n");
+        }
+        printf("\n*\n");
+    } while (op != 8); // Repeat until the user chooses to exit
+
+    return 0;
+}
+
+// Function definitions
+
+// Function to add numbers
+void addition() {
+    int i, num;
+    double sum = 0;
+    printf("How many numbers do you want to add? ");
+    
+    // Read the number of inputs and validate it
+    while (scanf("%d", &num) != 1 || num <= 0) {
+        printf("Invalid input! Enter a positive number: ");
+        while (getchar() != '\n'); // Clear the invalid input
+    }
+
+    printf("Enter the numbers:\n");
+    for (i = 1; i <= num; i++) {
+        double f_num;
+        while (scanf("%lf", &f_num) != 1) {
+            printf("Invalid input! Enter a valid number: ");
+            while (getchar() != '\n'); // Clear the invalid input
+        }
+        sum += f_num;
+    }
+
+    // Display the result
+    printf("Total sum of the numbers = %.2lf\n", sum);
+}
+
+// Function to subtract two numbers
+void subtract() {
+    double n1, n2;
+    printf("Enter the first number: ");
+    scanf("%lf", &n1);
+    printf("Enter the second number: ");
+    scanf("%lf", &n2);
+    printf("The result of %.2lf - %.2lf is: %.2lf\n", n1, n2, n1 - n2);
+}
+
+// Function to multiply two numbers
+void multiply() {
+    double n1, n2;
+    printf("Enter the first number: ");
+    scanf("%lf", &n1);
+    printf("Enter the second number: ");
+    scanf("%lf", &n2);
+    printf("The result of %.2lf * %.2lf is: %.2lf\n", n1, n2, n1 * n2);
+}
+
+// Function to divide two numbers
+void divide() {
+    double n1, n2;
+    printf("Enter the first number: ");
+    scanf("%lf", &n1);
+    printf("Enter the second number: ");
+    scanf("%lf", &n2);
+
+    if (n2 != 0) {
+        printf("The result of %.2lf / %.2lf is: %.2lf\n", n1, n2, n1 / n2);
+    } else {
+        printf("Error! Division by zero is not allowed.\n");
+    }
+}
+
+// Function to calculate the percentage
+void percentage() {
+    double value, percent;
+    printf("Enter the value: ");
+    scanf("%lf", &value);
+    printf("Enter the percentage: ");
+    scanf("%lf", &percent);
+    printf("%.2lf percent of %.2lf is: %.2lf\n", percent, value, (percent / 100) * value);
+}
+
+// Function to calculate the square of a number
+void square() {
+    double n1;
+    printf("Enter a number to get the square: ");
+    scanf("%lf", &n1);
+    printf("The square of %.2lf is: %.2lf\n", n1, n1 * n1);
+}
+
+// Function to calculate the cube of a number
+void cube() {
+    double n1;
+    printf("Enter a number to get the cube: ");
+    scanf("%lf", &n1);
+    printf("The cube of %.2lf is: %.2lf\n", n1, n1 * n1 * n1);
+}
+\end{lstlisting}
+
+\section{\underline{Function Explanations With Output Values}}
+
+\subsection{Addition Function}
+\small The \texttt{addition()} function allows the user to input multiple numbers and calculates their sum. It prompts the user for the number of inputs, validates the input, and then reads the numbers, summing them up. 
+
+\textbf{\\Example Output:}
+\begin{verbatim}
+Select an operation to perform in the C Calculator:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Percentage
+6. Square
+7. Cube
+8. Exit
+Please make a choice: 1
+How many numbers do you want to add? 3
+Enter the numbers:
+5
+10
+15
+Total sum of the numbers = 30.00
+\end{verbatim}
+
+\subsection{Subtraction Function}
+\small The \texttt{subtract()} function performs subtraction between two user-provided numbers. It prompts the user for two numbers and then calculates and displays their difference.
+
+\textbf{\\Example Output:}
+\begin{verbatim}
+Select an operation to perform in the C Calculator:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Percentage
+6. Square
+7. Cube
+8. Exit
+Please make a choice: 2
+Enter the first number: 20
+Enter the second number: 5
+The result of 20.00 - 5.00 is: 15.00
+\end{verbatim}
+
+\subsection{Multiplication Function}
+\small The \texttt{multiply()} function performs multiplication of two numbers entered by the user. It displays the product of the two numbers.
+
+\textbf{\\Example Output:}
+\begin{verbatim}
+Select an operation to perform in the C Calculator:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Percentage
+6. Square
+7. Cube
+8. Exit
+Please make a choice: 3
+Enter the first number: 4
+Enter the second number: 5
+The result of 4.00 * 5.00 is: 20.00
+\end{verbatim}
+
+\subsection{Division Function}
+\small The \texttt{divide()} function handles the division of two numbers. It includes a check to prevent division by zero, ensuring the user does not encounter an error.
+
+\textbf{\\Example Output:}
+\begin{verbatim}
+Select an operation to perform in the C Calculator:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Percentage
+6. Square
+7. Cube
+8. Exit
+Please make a choice: 4
+Enter the first number: 25
+Enter the second number: 5
+The result of 25.00 / 5.00 is: 5.00
+\end{verbatim}
+
+\subsection{Percentage Function}
+\small The \texttt{percentage()} function calculates the percentage of a given value. The user inputs a value and the percentage, and the function computes and displays the result.
+
+\textbf{\\Example Output:}
+\begin{verbatim}
+Select an operation to perform in the C Calculator:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Percentage
+6. Square
+7. Cube
+8. Exit
+Please make a choice: 5
+Enter the value: 200
+Enter the percentage: 15
+15.00 percent of 200.00 is: 30.00
+\end{verbatim}
+
+\subsection{{Square Function}}
+\small The \texttt{square()} function calculates the square of a number. The user inputs a number, and the function computes and displays its square.
+
+\textbf{\\Example Output:}
+\begin{verbatim}
+Select an operation to perform in the C Calculator:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Percentage
+6. Square
+7. Cube
+8. Exit
+Please make a choice: 6
+Enter a number to get the square: 7
+The square of 7.00 is: 49.00
+\end{verbatim}
+
+\subsection{Cube Function}
+\small The \texttt{cube()} function calculates the cube of a number. The user inputs a number, and the function computes and displays its cube.
+
+\textbf{\\Example Output:}
+\begin{verbatim}
+Select an operation to perform in the C Calculator:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Percentage
+6. Square
+7. Cube
+8. Exit
+Please make a choice: 7
+Enter a number to get the cube: 3
+The cube of 3.00 is: 27.00
+\end{verbatim}
+
+
+\section{\underline{Conclusion}}
+
+\small % Decreases the font size
+In conclusion, the simple calculator program developed in C provides a comprehensive tool for performing basic arithmetic operations. This calculator covers a range of functions including addition, subtraction, multiplication, division, percentage calculation, and the computation of squares and cubes of numbers. Each function is designed with user-friendly prompts and robust input validation to ensure accuracy and ease of use. \\
+
+The program demonstrates effective use of functions to modulate the code, making it both organized and easy to maintain. By implementing input validation and error handling, the calculator minimizes the risk of user errors and enhances the overall user experience.\\
+
+This project not only highlights fundamental programming concepts such as function definition and control structures but also showcases practical application in developing tools for everyday use. This simple calculator serves as a solid foundation for building more complex applications and improving programming skills in C.\\
+
+Overall, this calculator is a valuable exercise in programming, offering insights into both basic and intermediate concepts, and providing a useful utility for performing arithmetic operations efficiently.\\
+
+
+\newpage
+\begin{document}
+
+% Create the title page
+\maketitle
+
+
+\newpage
+\title{\centering \LARGE \textbf{4. Introduction to Latex} \\[0.5cm]}
+\author{\centering \Large \textbf{Lab Entry By} \\[0.5cm] \large Aishi Barik}
+
+\section{Introduction}
+
+\LaTeX{} is a sophisticated typesetting system developed by Leslie Lamport and built upon the TeX typesetting system created by Donald Knuth. It is widely recognized for its capability to handle complex formatting tasks with precision, making it the preferred choice for producing high-quality scientific, mathematical, and academic documents.
+
+\LaTeX{} excels in the following areas:
+
+\begin{itemize}
+    \item \textbf{Mathematical Typesetting}: \LaTeX{} is renowned for its exceptional ability to render complex mathematical equations and symbols. It provides a wide range of mathematical symbols and structures, such as fractions, integrals, summations, and matrices, all formatted with high typographical quality. This capability makes \LaTeX{} an essential tool for researchers and academics who need to include precise and well-formatted mathematical content in their documents.
+    
+    \item \textbf{Bibliographies and Citations}: Managing bibliographies and citations is another area where \LaTeX{} excels. Through the use of packages like bibtex or biber, users can automate the generation of bibliographies and manage references efficiently. This feature is particularly useful for academic writing, where proper citation and referencing are crucial.
+    
+    \item \textbf{Document Structuring}: \LaTeX{} allows users to structure their documents in a hierarchical manner, using sections, subsections, and subsubsections. This hierarchical structure ensures that documents are well-organized and easy to navigate. Users can also create tables of contents, lists of figures, and lists of tables automatically based on the document’s structure.
+    
+    \item \textbf{Customization and Flexibility}: With \LaTeX{}, users have extensive control over document formatting and layout. Customizing fonts, margins, line spacing, and other typographical elements is straightforward. This level of control allows for the creation of highly customized and professional-looking documents tailored to specific requirements.
+    
+    \item \textbf{Cross-Referencing and Indexing}: \LaTeX{} provides robust features for cross-referencing sections, figures, tables, and equations. It also supports automated indexing, making it easier to create comprehensive indexes and reference materials for larger documents.
+\end{itemize}
+
+\LaTeX{} is not limited to scientific and academic papers; it is also used for creating a variety of other document types, including:
+
+\begin{itemize}
+    \item \textbf{Technical Reports}: Detailed and well-organized reports on technical subjects, often including complex data and visualizations.
+    \item \textbf{Theses and Dissertations}: Formal academic documents that require precise formatting, including chapters, appendices, and bibliographies.
+    \item \textbf{Books and Articles}: Publications that benefit from \LaTeX{}'s ability to handle large documents and complex layouts.
+    \item \textbf{Presentations}: Using the beamer package, \LaTeX{} can create professional and visually appealing presentation slides.
+\end{itemize}
+
+Despite its powerful features, \LaTeX{} can have a steep learning curve, especially for those new to typesetting or programming. However, once mastered, it provides a level of control and flexibility that is unmatched by traditional word processors. Many users find that investing time in learning \LaTeX{} pays off in the form of high-quality, professional documents that meet rigorous standards.
+
+In summary, \LaTeX{} is a versatile and powerful typesetting system that supports a wide range of document types and formatting requirements, making it an invaluable tool for academics, scientists, and professionals who need to produce high-quality, structured documents.
+
+
+\section{Basic Document Structure}
+
+A basic \LaTeX{} document has a fundamental structure that consists of several key components. Understanding this structure is essential for creating and managing \LaTeX{} documents effectively. Below is an elaboration on each part of this structure:
+
+\begin{verbatim}
+\documentclass{article}
+\end{verbatim}
+\textbf{Document Class:}
+The \texttt{\textbackslash documentclass\{article\}} command specifies the type of document you are creating. The article class is one of the most commonly used document classes, suitable for shorter documents such as journal articles, reports, and essays. Other document classes include report, which is ideal for longer documents with chapters, and book, which is designed for books and includes additional features for managing chapters and sections.
+
+\begin{verbatim}
+\begin{document}
+\end{verbatim}
+\textbf{Document Environment:}
+The \texttt{\textbackslash begin\{document\}} and \texttt{\textbackslash end\{document\}} commands define the main content area of your document. All of your text, sections, figures, tables, and other content must be placed between these two commands. Anything outside of this environment is not processed as part of the document's content.
+
+\begin{verbatim}
+% Your content here
+\end{verbatim}
+\textbf{Content:}
+Within the document environment, you can include various elements to build your document. Here are some common elements you might use:
+
+\begin{itemize}
+    \item \textbf{Sections and Subsections}: Use commands like \texttt{\textbackslash section\{Title\}}, \texttt{\textbackslash subsection\{Subtitle\}}, and \texttt{\textbackslash subsubsection\{Subsubtitle\}} to organize your document into a hierarchical structure.
+    \item \textbf{Text and Paragraphs}: Simply type your text as you would in any other word processor. \LaTeX{} will automatically format it into paragraphs.
+    \item \textbf{Figures and Tables}: You can include figures and tables using the figure and table environments, respectively, and manage their placement and captions.
+    \item \textbf{Mathematics:} Insert mathematical expressions and equations using \texttt{\textbackslash begin\{equation\}} for block equations or inline math using \( ... \).
+    \item \textbf{References and Citations:} Use bibliographic tools to manage references and citations in your document.
+\end{itemize}
+
+\textbf{Additional Packages:}
+\LaTeX{} allows for the inclusion of additional packages that extend its functionality. For example, to include graphics, you might add \texttt{\textbackslash usepackage\{graphicx\}} in the preamble (before \texttt{\textbackslash begin\{document\}}). Packages provide extra features and commands that are not included in the base \LaTeX{} installation.
+
+In summary, the basic structure of a \LaTeX{} document involves defining the document class, including content within the document environment, and optionally utilizing additional packages to enhance functionality. Understanding and utilizing these components allows you to create well-structured and professionally formatted documents.
+
+
+\section{Text Formatting}
+
+\LaTeX{} provides a range of commands to format text according to your needs. Understanding these commands will help you produce well-structured and visually appealing documents. Below are some commonly used text formatting commands with elaborations:
+
+\begin{itemize}
+    \item \textbf{Bold Text:}
+    \begin{verbatim}
+    \textbf{This is bold text}
+    \end{verbatim}
+    To create bold text in \LaTeX{}, use the \texttt{\textbackslash textbf\{\}} command. This command is often used to emphasize important words or sections of text. The text enclosed within the braces {} will be rendered in bold typeface, which helps to draw attention to key parts of your document.
+
+    \item \textit{Italic Text:}
+    \begin{verbatim}
+    \textit{This is italic text}
+    \end{verbatim}
+    Italic text is created using the \texttt{\textbackslash textit\{\}} command. This formatting style is typically used for emphasis, highlighting, or denoting terms that are being defined or used in a special way. Text enclosed in \texttt{\textbackslash textit\{\}} will appear in an italic typeface, making it distinct from the surrounding text.
+
+    \item \textit{Underlined Text:}
+    \begin{verbatim}
+    \underline{This is underlined text}
+    \end{verbatim}
+    To underline text, use the \texttt{\textbackslash underline\{\}} command. Underlining is less common in modern documents compared to bold or italic text, but it can be useful for emphasizing specific parts of text or denoting URLs. The text inside the braces {} will be displayed with a horizontal line beneath it.
+
+    \item \texttt{Typewriter or Monospaced Font:}
+    \begin{verbatim}
+    \texttt{This is monospaced text}
+    \end{verbatim}
+    The \texttt{\textbackslash texttt\{\}} command formats text in a typewriter or monospaced font. This font style is often used for code snippets or computer output, where each character takes up the same amount of space horizontally. It provides a clear and consistent appearance for text that needs to align precisely.
+
+    \item \textsf{Sans-Serif Font:}
+    \begin{verbatim}
+    \textsf{This is sans-serif text}
+    \end{verbatim}
+    The \texttt{\textbackslash textsf\{\}} command changes the font to sans-serif. Sans-serif fonts are characterized by the absence of the small projecting features (serifs) at the ends of strokes. They are commonly used for modern, clean-looking documents and are often preferred for headings and titles.
+
+    \item \texttt{Small Caps:}
+    \begin{verbatim}
+    \textsc{This is small caps text}
+    \end{verbatim}
+    The \texttt{\textbackslash textsc\{\}} command formats text in small capitals. In small caps, lowercase letters are rendered in uppercase but with a smaller size. This style is used for emphasis or to distinguish text from the surrounding content.
+
+    \item \textcolor{color}{Text in Different Colors:}
+    \begin{verbatim}
+    \usepackage{xcolor}
+    \textcolor{red}{This is red text}
+    \end{verbatim}
+    To color text, use the \texttt{\textbackslash textcolor\{color\}\{text\}} command. First, ensure that you include the xcolor package in your document preamble with \texttt{\textbackslash usepackage\{xcolor\}}. You can then specify the desired color (e.g., red, blue, green) and the text to be colored.
+
+    \item \texttt{Custom Font Sizes:}
+    \begin{verbatim}
+    {\small This text is smaller.}
+    {\large This text is larger.}
+    \end{verbatim}
+    Font sizes can be adjusted using commands like \texttt{\small}, \texttt{\large}, and other size commands. The text enclosed within these commands will be displayed in the specified size relative to the default size.
+
+\end{itemize}
+
+By mastering these text formatting commands, you can effectively highlight important information, create a visually appealing document, and ensure that your content is presented in a clear and organized manner.
+
+
+\section{Mathematical Equations}
+
+One of the most powerful features of \LaTeX{} is its ability to typeset complex mathematical equations with precision and clarity. \LaTeX{} provides a range of tools for displaying mathematical formulas and expressions, making it a popular choice for academic and scientific documents.
+
+\subsection{Displayed Equations}
+
+Displayed equations are centered on their own line and are typically used for important or complex equations that need to stand out. In \LaTeX{}, you can create displayed equations using the \texttt{equation} environment, which automatically numbers the equations for reference in the document. For example:
+
+\begin{equation}
+E = mc^2
+\end{equation}
+
+This example demonstrates Einstein's famous mass-energy equivalence formula. The equation is centered and displayed on its own line, and \LaTeX{} automatically adds a number to the right of the equation for easy reference.
+
+To write more complex equations or include multiple equations in a sequence, you can use other environments such as \texttt{align} or \texttt{gather}. For example:
+
+\begin{align}
+a^2 + b^2 &= c^2 \\
+x &= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{align}
+
+The \texttt{align} environment allows you to align equations at the equal signs or other operators, while the \texttt{gather} environment centers multiple equations without alignment.
+
+\subsection{Inline Equations}
+
+Inline equations are used within a line of text and are typically employed for simpler expressions or mathematical notations. To include an inline equation, you use the \texttt{\$} symbols around the mathematical expression. For example:
+
+\begin{verbatim}
+The Pythagorean theorem states that $a^2 + b^2 = c^2$.
+\end{verbatim}
+
+This renders as: The Pythagorean theorem states that \(a^2 + b^2 = c^2\).
+
+Inline equations are useful for incorporating mathematical expressions into sentences without disrupting the flow of text. For more complex expressions, you may still need to use displayed equations to ensure clarity.
+
+\subsection{Mathematical Symbols and Operators}
+
+\LaTeX{} provides a rich set of symbols and operators for mathematical notation. Here are a few examples:
+
+\begin{itemize}
+    \item Greek letters: \(\alpha, \beta, \gamma\) (use commands like \texttt{\textbackslash alpha}, \texttt{\textbackslash beta})
+    \item Operators: \(\sum, \int, \prod\) (use commands like \texttt{\textbackslash sum}, \texttt{\textbackslash int})
+    \item Relations: \(\leq, \geq, \neq\) (use commands like \texttt{\textbackslash leq}, \texttt{\textbackslash geq})
+    \item Special symbols: \(\infty, \nabla, \partial\) (use commands like \texttt{\textbackslash infinity}, \texttt{\textbackslash nabla}, \texttt{\textbackslash partial})
+\end{itemize}
+
+These symbols and operators are essential for expressing mathematical concepts and equations clearly and accurately in \LaTeX{}.
+
+\subsection{Using Packages for Advanced Math}
+
+For more advanced mathematical typesetting, \LaTeX{} offers several packages such as amsmath and mathtools. These packages provide additional functionality and formatting options. For instance, to use the amsmath package, include the following line in the preamble of your document:
+
+\begin{verbatim}
+\usepackage{amsmath}
+\end{verbatim}
+
+The amsmath package adds features like \texttt{cases} for piecewise functions, \texttt{align*} for unnumbered equations, and many more.
+
+In summary, \LaTeX{} excels at handling mathematical notation with its comprehensive set of tools and features. Whether you're working with simple inline equations or complex displayed formulas, \LaTeX{} provides the flexibility and precision needed for professional-quality typesetting.
+
+
+\section{Inserting Images}
+
+Inserting images into a \LaTeX{} document enhances the visual appeal and can help illustrate concepts or provide examples. To include images, you need to use the \texttt{graphicx} package, which provides the necessary functionality. Here’s a step-by-step guide on how to do this:
+
+\subsection{Including the Graphicx Package}
+
+Before you can insert images, you need to include the \texttt{graphicx} package in your document preamble. Add the following line to the preamble of your document:
+
+\begin{verbatim}
+\usepackage{graphicx}
+\end{verbatim}
+
+This line tells \LaTeX{} to load the package that handles image inclusion.
+
+\subsection{Basic Image Insertion}
+
+To insert an image, you use the \texttt{figure} environment along with the \texttt{includegraphics} command. Here’s a basic example:
+
+\begin{verbatim}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image}
+    \caption{An example image.}
+    \label{fig:example}
+\end{figure}
+\end{verbatim}
+
+This code snippet does the following:
+- \texttt{figure}[h]: The \texttt{figure} environment is used to include images. The optional argument \texttt{[h]} is a placement specifier indicating that \LaTeX{} should try to position the figure “here” (i.e., approximately at the location where it appears in the text).
+- \texttt{\centering}: This command centers the image horizontally within the figure environment.
+- \texttt{\includegraphics[width=0.5\textwidth]{example-image}}: This command inserts the image file named \texttt{example-image}. The optional argument \texttt{width=0.5\textwidth} scales the image to 50% of the text width. You can adjust the width as needed, or use \texttt{height} or \texttt{scale} to control the image size.
+- \texttt{\caption{An example image.}}: Adds a caption below the image. This caption will be numbered and can be referenced elsewhere in the document.
+- \texttt{\label{fig:example}}: Sets a label for the figure, allowing you to reference it in the text using \texttt{\ref{fig:example}}.
+
+\subsection{Advanced Options}
+
+The \texttt{graphicx} package provides additional options for controlling image placement and appearance. Here are a few advanced options:
+
+\begin{itemize}
+    \item \texttt{scale}: Scale the image by a factor. For example, \texttt{\includegraphics[scale=0.75]{example-image}} scales the image to 75% of its original size.
+    \item \texttt{height} and \texttt{width}: Specify the height or width of the image. For instance, \texttt{\includegraphics[height=5cm]{example-image}} sets the height of the image to 5 cm, while preserving the aspect ratio.
+    \item \texttt{angle}: Rotate the image by a specified angle. For example, \texttt{\includegraphics[angle=90,width=0.5\textwidth]{example-image}} rotates the image 90 degrees clockwise.
+\end{itemize}
+
+\subsection{Figure Placement}
+
+By default, \LaTeX{} will try to place figures in a location that optimizes the document layout. The placement specifiers \texttt{[h]}, \texttt{[t]}, \texttt{[b]}, and \texttt{[p]} can be used to suggest figure placement:
+\begin{itemize}
+    \item \texttt{h}: Here, approximately at the point in the text where it is defined.
+    \item \texttt{t}: Top of the page.
+    \item \texttt{b}: Bottom of the page.
+    \item \texttt{p}: On a separate page for floats.
+\end{itemize}
+
+\LaTeX{} may still move figures to optimize the layout, so it is a good practice to place figures in a logical and consistent manner throughout your document.
+
+\subsection{Including Images from External Sources}
+
+When inserting images, ensure that the image file is in a format supported by \LaTeX{}, such as PNG, JPEG, or PDF. Place the image file in the same directory as your .tex file or provide a relative path to its location.
+
+By following these steps, you can effectively include and manage images in your \LaTeX{} document, enhancing the presentation and clarity of your work.
+
+
+\section{Creating Lists}
+
+In \LaTeX{}, you can create both numbered (ordered) and bulleted (unordered) lists to organize content effectively. Lists are useful for presenting information in a structured and readable format. \LaTeX{} provides straightforward commands to create these lists.
+
+\subsection{Bulleted List}
+
+Bulleted lists are used when the order of items is not important. They are created using the \texttt{itemize} environment. Each item in the list is preceded by a bullet point. Here is a basic example:
+
+\begin{verbatim}
+\begin{itemize}
+    \item First item
+    \item Second item
+    \item Third item
+\end{itemize}
+\end{verbatim}
+
+This will render as:
+
+\begin{itemize}
+    \item First item
+    \item Second item
+    \item Third item
+\end{itemize}
+
+You can customize the appearance of the bullet points by using various \LaTeX{} packages or by modifying the list style. For instance, the \texttt{enumitem} package allows you to change the symbols or styles used for bullet points.
+
+\subsection{Numbered List}
+
+Numbered lists are used when the order of items is significant. They are created using the \texttt{enumerate} environment. Each item in the list is preceded by a number. Here is a basic example:
+
+\begin{verbatim}
+\begin{enumerate}
+    \item First item
+    \item Second item
+    \item Third item
+\end{enumerate}
+\end{verbatim}
+
+This will render as:
+
+\begin{enumerate}
+    \item First item
+    \item Second item
+    \item Third item
+\end{enumerate}
+
+The \texttt{enumerate} environment automatically numbers the items and adjusts the numbering as you add or remove items. Like bulleted lists, you can also customize numbered lists using the \texttt{enumitem} package to change numbering styles, such as using Roman numerals or letters.
+
+\subsection{Nested Lists}
+
+You can create nested lists to further organize content. This is done by placing one list environment inside another. Here’s an example of a nested bulleted list:
+
+\begin{verbatim}
+\begin{itemize}
+    \item Main item
+    \begin{itemize}
+        \item Sub-item 1
+        \item Sub-item 2
+    \end{itemize}
+    \item Another main item
+\end{itemize}
+\end{verbatim}
+
+This will render as:
+
+\begin{itemize}
+    \item Main item
+    \begin{itemize}
+        \item Sub-item 1
+        \item Sub-item 2
+    \end{itemize}
+    \item Another main item
+\end{itemize}
+
+Similarly, you can nest numbered lists:
+
+\begin{verbatim}
+\begin{enumerate}
+    \item Main item
+    \begin{enumerate}
+        \item Sub-item 1
+        \item Sub-item 2
+    \end{enumerate}
+    \item Another main item
+\end{enumerate}
+\end{verbatim}
+
+This will render as:
+
+\begin{enumerate}
+    \item Main item
+    \begin{enumerate}
+        \item Sub-item 1
+        \item Sub-item 2
+    \end{enumerate}
+    \item Another main item
+\end{enumerate}
+
+Nested lists are helpful for breaking down complex information into more digestible parts, and \LaTeX{} handles the indentation and formatting automatically.
+
+
+\section{Adding Hyperlinks}
+
+Adding hyperlinks in a \LaTeX{} document can enhance its usability by allowing readers to navigate to external websites, documents, or specific locations within the same document. This is particularly useful for creating interactive and web-friendly documents. 
+
+To add hyperlinks, you need to use the \texttt{hyperref} package, which provides a simple interface for creating hyperlinks. Here's a step-by-step explanation of how to use it:
+
+\begin{itemize}
+    \item First, include the \texttt{hyperref} package in the preamble of your document by adding the line:
+    \begin{verbatim}
+\usepackage{hyperref}
+    \end{verbatim}
+    This package enables hyperlink functionality throughout your document.
+
+    \item To create an external link, use the \texttt{\textbackslash href} command. The syntax for this command is:
+    \begin{verbatim}
+\href{URL}{link text}
+    \end{verbatim}
+    Where \texttt{URL} is the web address you want to link to, and \texttt{link text} is the text that will appear as the clickable link.
+
+    \item For example, to link to the \LaTeX{} project website, you would use:
+    \begin{verbatim}
+\href{https://www.latex-project.org/}{Visit the \LaTeX{} project website.}
+    \end{verbatim}
+    This command creates a hyperlink with the text "Visit the \LaTeX{} project website" that directs to the specified URL.
+
+    \item You can also link to sections within the same document. To do this, use the \texttt{\textbackslash label} command to create a reference point and the \texttt{\textbackslash ref} command to link to it. For instance:
+    \begin{verbatim}
+\section{Introduction}\label{sec:intro}
+    \end{verbatim}
+    \begin{verbatim}
+Refer to Section \ref{sec:intro} for an introduction.
+    \end{verbatim}
+    This will create a link in the text that points to the "Introduction" section within the document.
+
+    \item For internal links to specific locations, such as figures or tables, you can use the \texttt{\textbackslash pageref} command along with \texttt{\textbackslash label}:
+    \begin{verbatim}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image}
+    \caption{An example image.}
+    \label{fig:example}
+\end{figure}
+    \end{verbatim}
+    \begin{verbatim}
+See Figure \ref{fig:example} on page \pageref{fig:example}.
+    \end{verbatim}
+    This command will link to the figure and provide the page number where it is located.
+\end{itemize}
+
+By incorporating hyperlinks, you can make your \LaTeX{} documents more interactive and user-friendly, providing easy access to additional resources and information. The \texttt{hyperref} package also allows for customization of link colors and styles, which can be controlled through package options, enhancing the visual appeal and functionality of your document.
+
+
+\section{Conclusion}
+
+This document has provided an introduction to the fundamental features of \LaTeX{}, a powerful typesetting system used for creating high-quality documents. We covered essential topics such as basic document structure, text formatting, mathematical equations, and image insertion, laying the groundwork for more advanced \LaTeX{} capabilities.
+
+\LaTeX{} offers extensive features beyond those discussed, including sophisticated bibliographic management with packages like biblatex or natbib, and advanced table and figure formatting. It also supports custom commands and environments, enhancing document consistency and efficiency.
+
+Additionally, \LaTeX{} accommodates internationalization and localization through packages such as polyglossia or babel, and allows document output in various formats like PDF, HTML, and EPUB.
+
+In summary, while this document provides a basic overview, \LaTeX{}'s true strength lies in its advanced features and flexibility, enabling the creation of professional-quality documents with precision. As you delve deeper into \LaTeX{}, you'll uncover more tools and techniques that can enhance your document preparation process.
+
+\newpage
+\title{\centering \Large \textbf{4. Creating LaTeX Repository on GitHub} \\[0.5cm]}
+\author{\centering \Large \textbf{Lab Entry By} \\[0.5cm] \large \textbf{Sayan Biswas}}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+In this guide, we will walk through the steps to create a \LaTeX\ repository on GitHub. GitHub is a popular platform for version control and collaboration, allowing you to store your \LaTeX\ projects and share them with others.
+
+\section{Pre-requisites}
+Before proceeding, make sure you have the following:
+\begin{itemize}
+    \item A GitHub account (\url{https://github.com/}).
+    \item \texttt{git} installed on your machine.
+    \item Basic understanding of version control.
+\end{itemize}
+
+\section{Step 1: Creating a Repository}
+To create a repository on GitHub:
+\begin{enumerate}
+    \item Log in to your GitHub account.
+    \item Click on the \textbf{New} repository button in the top right corner.
+    \item Give your repository a name, e.g., \texttt{my-latex-project}.
+    \item Optionally, add a description.
+    \item Choose whether you want the repository to be public or private.
+    \item Click \textbf{Create repository}.
+\end{enumerate}
+
+\section{Step 2: Setting Up \LaTeX\ Project Locally}
+Next, set up your \LaTeX\ project locally:
+\begin{enumerate}
+    \item Navigate to the folder where you want to store your project.
+    \item Initialize a \texttt{git} repository:
+    \begin{verbatim}
+    git init
+    \end{verbatim}
+    \item Create your \LaTeX\ files, for example:
+    \begin{verbatim}
+    touch main.tex
+    \end{verbatim}
+\end{enumerate}
+
+\section{Step 3: Connecting Local Repository to GitHub}
+Now, connect your local repository to GitHub:
+\begin{enumerate}
+    \item In your terminal, run:
+    \begin{verbatim}
+    git remote add origin https://github.com/your-username/my-latex-project.git
+    \end{verbatim}
+    \item Add and commit your changes:
+    \begin{verbatim}
+    git add .
+    git commit -m "Initial commit"
+    \end{verbatim}
+    \item Push your changes to GitHub:
+    \begin{verbatim}
+    git push -u origin master
+    \end{verbatim}
+\end{enumerate}
+
+\section{Step 4: Managing Your \LaTeX\ Project}
+Once the repository is created and set up, you can continue to work on your \LaTeX\ project by adding, committing, and pushing changes. GitHub also allows for collaborative work, so you can invite others to contribute to your project.
+
+\subsection{Adding Files}
+To add new files, such as additional \LaTeX\ chapters or images, you can:
+\begin{verbatim}
+git add newfile.tex
+git commit -m "Added new chapter"
+git push
+\end{verbatim}
+
+\subsection{Collaboration}
+To collaborate with others, simply add them as collaborators in your GitHub repository settings, or share the repository link for them to fork.
+
+\section{Conclusion}
+In this document, we covered how to create a \LaTeX\ repository on GitHub and manage it using basic \texttt{git} commands. By hosting your \LaTeX\ projects on GitHub, you can leverage version control and collaboration features to enhance your workflow.
+
+\end{document}
